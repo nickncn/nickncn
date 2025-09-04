@@ -53,12 +53,12 @@
   
   <!-- Main title -->
   <text x="400" y="90" text-anchor="middle" font-family="Monaco, Consolas, monospace" font-size="48" font-weight="bold" fill="url(#gradient1)" filter="url(#glow)">
-    JOHN
+    NICK
   </text>
   
   <!-- Subtitle -->
   <text x="400" y="120" text-anchor="middle" font-family="Monaco, Consolas, monospace" font-size="16" fill="#8b949e">
-    Building AI × Web3 × Finance Solutions
+    Building AI × Blockchain × BioTech
     <animate attributeName="opacity" values="0;1" dur="0.1s" begin="0s" fill="freeze"/>
   </text>
   
