@@ -1,13 +1,5 @@
 ## Hi there, This is Nick👋
 
-
-<div align="center">
-  <!-- Option 1: Use the SVG directly -->
-  <img src="./assets/header.svg" alt="Custom Tech Header" />
-  <!-- Option 2: Or use enhanced typing SVG -->
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=28&duration=2000&pause=500&color=00D8FF&background=0D111700&center=true&vCenter=true&multiline=true&width=800&height=120&lines=%E2%9A%A1+Building+AI+%C3%97+Blockchain+%C3%97+BioTech+%E2%9A%A1;%F0%9F%A6%84+Smart+Contracts+%E2%86%94+Smart+Agents+%F0%9F%A6%84;%F0%9F%9A%80+From+TradFi+Risk+%E2%86%92+DeFi+Protocols+%F0%9F%9A%80" alt="Dynamic Header" />
-</div>
-
 ## 🚀 About Me
 
 Love building in AI, Web3 sector for futuristic tech. From Finance to DeFi, then dived deep in AI powered communication, payments, infra and more. Love building scalable solutions, contributing to open source, and staying at the forefront of technology innovation.
