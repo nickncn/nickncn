@@ -10,7 +10,7 @@
 
 ## 🚀 About Me
 
-I am passionate in building in AI, Web3 sector for futuristic tech. From Finance to DeFi, then dived deep in AI powered communication, payments, infra and more. Love building scalable solutions, contributing to open source, and staying at the forefront of technology innovation.
+Love building in AI, Web3 sector for futuristic tech. From Finance to DeFi, then dived deep in AI powered communication, payments, infra and more. Love building scalable solutions, contributing to open source, and staying at the forefront of technology innovation.
 
 - 📫 Reach me at **[nickncnn@gmail.com]**
 
