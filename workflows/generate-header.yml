@@ -1,0 +1,77 @@
+# .github/workflows/generate-header.yml
+name: Generate Profile Header
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: |
+        npm install puppeteer canvas
+        
+    - name: Generate animated header
+      run: |
+        cat > generate-header.js << 'EOF'
+        const puppeteer = require('puppeteer');
+        const fs = require('fs');
+
+        (async () => {
+          const browser = await puppeteer.launch();
+          const page = await browser.newPage();
+          
+          // Set the HTML content (your custom header)
+          const html = `
+            <!DOCTYPE html>
+            <html>
+            <head>
+              <style>
+                /* Your CSS from the HTML artifact here */
+                body { margin: 0; background: #0d1117; }
+                .header-container { 
+                  width: 800px; 
+                  height: 200px; 
+                  /* ... rest of your styles ... */
+                }
+              </style>
+            </head>
+            <body>
+              <!-- Your header HTML here -->
+            </body>
+            </html>
+          `;
+          
+          await page.setContent(html);
+          await page.setViewport({ width: 800, height: 200 });
+          
+          // Take screenshot
+          await page.screenshot({
+            path: 'header.png',
+            clip: { x: 0, y: 0, width: 800, height: 200 }
+          });
+          
+          await browser.close();
+        })();
+        EOF
+        
+        node generate-header.js
+        
+    - name: Commit and push
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add header.png
+        git commit -m "Update profile header" || exit 0
+        git push
