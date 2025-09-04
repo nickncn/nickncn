@@ -1,5 +1,9 @@
 ## Hi there, This is Nick👋
 
+<div align="center">
+  <img src="./assets/header.svg"
+</div>
+
 ## 🚀 About Me
 
 Love building in AI, Web3 sector for futuristic tech. From Finance to DeFi, then dived deep in AI powered communication, payments, infra and more. Love building scalable solutions, contributing to open source, and staying at the forefront of technology innovation.
